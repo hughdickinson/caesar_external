@@ -99,7 +99,7 @@ class UniqueMessage(object):
         self.message = message
 
     def __eq__(self, other):
-        return self.classification_id == other(self.classification_id)
+        return self.classification_id == other.classification_id
 
     def __hash__(self):
         return hash(self.classification_id)
